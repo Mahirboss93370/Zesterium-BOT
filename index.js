@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const token = process.env.token
 client.commands = new Discord.Collection();
 const fs = require('fs');
 
@@ -36,4 +37,4 @@ client.on("guildMemberRemove", user => {
     user.guild.channels.get("670912042101768222").send(user + "nous a quitter !")
 })
 
-client.login('NjU0MzgyMDQ2NzU5NzQ3NjE0.Xi1TKw.e7pJvQH56VE8ncJTbnhBF5US-Jg');
+client.login('token');
