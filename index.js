@@ -36,4 +36,4 @@ client.on("guildMemberRemove", user => {
     user.guild.channels.get("670912042101768222").send(user + "nous a quitter !")
 })
 
-client.login('process.env.TOKEN');
+client.login(process.env.TOKEN);
