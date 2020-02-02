@@ -12,6 +12,8 @@ module.exports.run = (client, message, args) => {
         member.addRole(role.id)
             .then(() => message.channel.send('Vous avez désormais le role ' + role.toString()))
             .catch(console.error);
+    
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/addrole**");
 };
 
 module.exports.help = {

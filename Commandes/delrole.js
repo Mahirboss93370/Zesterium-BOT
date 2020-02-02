@@ -12,6 +12,8 @@ module.exports.run = (client, message, args) => {
         member.removeRole(role.id)
             .then(() => message.channel.send('Vous n\'avez désormais plus le role ' + role.toString()))
             .catch(console.error);
+    
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/delrole**");
 };
 
 module.exports.help = {

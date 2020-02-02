@@ -21,6 +21,8 @@ module.exports.run = async(client, message, args) => {
         message.channel.send(`${member.user.username} à été kick par ${message.author.username}`);
         message.mentions.users.first().send(`Vous avez été kick du serveur **${message.guild.name}** par ${message.author.username}`).catch(console.error);
     });
+
+    message.guild.channels.get("673532442463961088").send(message.author + ` a **/ban** " ${member.user.username}`);
 };
 
 module.exports.help = {
