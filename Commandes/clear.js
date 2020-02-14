@@ -14,7 +14,7 @@ module.exports.run = async(client, message, args) => {
 
     message.channel.send(`J'ai supprimer ${args[0]} messages !`);
 
-    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/clear**");
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/clear**").catch(console.error);
 };
 
 module.exports.help = {

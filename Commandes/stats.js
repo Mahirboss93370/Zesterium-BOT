@@ -35,7 +35,7 @@ module.exports.run = (client, message, args) => {
             }
         }
     });
-    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/stats**");
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/stats**").catch(console.error);
 };
 
 module.exports.help = {

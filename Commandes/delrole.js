@@ -13,7 +13,7 @@ module.exports.run = (client, message, args) => {
             .then(() => message.channel.send('Vous n\'avez désormais plus le role ' + role.toString()))
             .catch(console.error);
     
-    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/delrole**");
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/delrole**").catch(console.error);
 };
 
 module.exports.help = {

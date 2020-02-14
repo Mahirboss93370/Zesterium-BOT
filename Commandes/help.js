@@ -15,7 +15,7 @@ module.exports.run = async(client, message, args) => {
     message.channel.send("/warn (Mentioner l'utilisateur) - Avertis un joueur.");
     message.channel.send("/youtube - Lien pour acceder à la chaine youtube.");
 
-    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/help**");
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/help**").catch(console.error);
 };
 
 module.exports.help = {

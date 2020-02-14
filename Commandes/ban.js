@@ -22,7 +22,7 @@ module.exports.run = async(client, message, args) => {
         message.mentions.users.first().send(`Vous avez été banni du serveur **${message.guild.name}** par ${message.author.username}`).catch(console.error);
     });
 
-    message.guild.channels.get("673532453142396939").send(message.author + ` a **/ban** " ${member.user.username}`);
+    message.guild.channels.get("673532453142396939").send(message.author + ` a **/ban** " ${member.user.username}`).catch(console.error);
 };
 
 module.exports.help = {

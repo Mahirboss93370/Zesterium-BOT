@@ -10,7 +10,7 @@ module.exports.run = async(client, message, args) => {
 
     message.channel.send(`${args[0]} à été averti par ${message.author} attention la prochaine fois vous vous ferez bannir ou expulser !`)
 
-    message.guild.channels.get("673532427368661020").send(message.author + ` a **/warn** " ${args[0]}`);
+    message.guild.channels.get("673532427368661020").send(message.author + ` a **/warn** " ${args[0]}`).catch(console.error);
 };
 
 module.exports.help = {

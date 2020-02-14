@@ -13,7 +13,7 @@ module.exports.run = (client, message, args) => {
             .then(() => message.channel.send('Vous avez désormais le role ' + role.toString()))
             .catch(console.error);
     
-    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/addrole**");
+    message.guild.channels.get("673532397257490433").send(message.author + " a utiliser la commande **/addrole**").catch(console.error);
 };
 
 module.exports.help = {
