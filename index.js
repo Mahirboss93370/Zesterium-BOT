@@ -28,12 +28,12 @@ fs.readdir('./Events/', (error, f) => {
 
 client.on("guildMemberAdd", user => {
     user.guild.channels.get("670911919603056650").send("Bienvenue à " + user + " sur le serveur " + user.guild.name + " on est maintenant " + user.guild.memberCount + " sur le serveur ! 🥳").catch(console.error);
-    user.addRole("665560055218700330")
-    user.addRole("654392348343533598")
-})
+    user.addRole("654392348343533598");
+    user.addRole("665560055218700330");
+});
 
 client.on("guildMemberRemove", user => {
     user.guild.channels.get("670912042101768222").send(user + "nous a quitter, on est maintenant " + message.guild.memberCount + " sur le serveur. 😭").catch(console.error);
-})
+});
 
 client.login(process.env.TOKEN);
